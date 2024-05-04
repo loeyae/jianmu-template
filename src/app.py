@@ -1,7 +1,17 @@
 from reactivity import ref, computed, watch, watch_effect
-from utils.p import fig, plot_cnt, plot_title
+from .utils.p import fig, plot_cnt, plot_title
 from jianmu import File, beep, open_external, open_path, show_error_box, show_item_in_folder, show_message_box, show_open_dialog, show_save_dialog, trash_item
 import pandas as pd
+import os
+import logging.config
+
+cpath = os.path.dirname(os.path.abspath(__file__))
+project_dir = os.path.abspath('../')
+if not os.path.exists(os.path.join(project_dir, 'log')):
+    os.mkdir(os.path.join(project_dir, 'log'), 0o777)
+logging.config.fileConfig(os.path.join(project_dir, 'logging.conf'))
+logger = logging.getLogger('root')
+
 
 header_index = ref('jianmu-template')
 

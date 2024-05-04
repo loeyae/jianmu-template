@@ -1,0 +1,22 @@
+{
+  "appId": "com.loeyae.dev.app",
+  "productName": "Jianmu Template",
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "shortcutName": "Jianmu-Template"
+  },
+  "extraResources": [{
+      "from": "dist/jm.exe",
+      "to": "jm.exe"
+    },
+    {
+      "from": "logging.conf",
+      "to": "../logging.conf"
+    },
+    {
+      "from": "app.ini",
+      "to": "../app.ini"
+    }]
+}
