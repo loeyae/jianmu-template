@@ -16,7 +16,7 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
     "element-plus": "^2.2.29",
-    "@loeyae/jianmu": "^0.0.2",
+    "@loeyae/jianmu": "^0.0.3",
     "vue": "^3.2.36"
   },
   "devDependencies": {
